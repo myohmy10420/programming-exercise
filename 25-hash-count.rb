@@ -4,7 +4,12 @@ def count(arr)
   h = {}
 
   arr.each do |i|
-    # ...
+    if !h[i]
+      h.merge!({i => 1})
+    else
+      value = h[i] + 1
+      h.merge!({i => value})
+    end
   end
 
   return h # 回传一个 hash

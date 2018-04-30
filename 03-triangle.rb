@@ -5,7 +5,6 @@ a = gets
 
 print "请输入直角三角形的底边，然后按 Enter: "
 b = gets
+answer = (a.to_f*b.to_f/2).round
 
-# .....
-
-puts "直角三角形的面积是: _________"
+puts "直角三角形的面积是: #{answer}"
